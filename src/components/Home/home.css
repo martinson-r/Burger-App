@@ -1,0 +1,19 @@
+.container {
+    width: 80%;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.logo, .contactInfo, .menu {
+    max-width: 100%;
+}
+
+.contactInfo, .menu {
+    margin-top: 30px;
+}
