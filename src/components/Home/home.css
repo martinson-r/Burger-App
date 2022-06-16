@@ -39,3 +39,8 @@
 .cart-text {
     padding-bottom: 40px;
 }
+
+.cart-counter {
+    font-weight: bold;
+    float: right;
+}
