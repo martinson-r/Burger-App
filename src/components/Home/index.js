@@ -28,6 +28,7 @@ function Home() {
                         </div>
                     </header>
                     <div className="menu">
+                    <div className="cart-text" onClick={() => setIsVisible(true)}><b>View Cart</b></div>
                     <div className="cart" onClick={() => setIsVisible(true)}>View Cart</div>
                     {/* For each category we have, render out a MenuCard */}
                     {menu !== undefined && menu.menu?.map((item) =>

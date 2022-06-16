@@ -1,0 +1,16 @@
+.menuCard {
+    background-color: #FCE87E;
+    margin-bottom: 30px;
+}
+
+.menuItemBox {
+    display: flex;
+}
+
+.menuItemBox__nameOfMenuItem {
+    width: 150px;
+}
+
+.menuItemBox__menuItemButtons {
+    width: 150px;
+}
