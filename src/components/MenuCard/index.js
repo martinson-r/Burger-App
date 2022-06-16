@@ -1,4 +1,6 @@
 import "./menuCard.css";
+import PrimaryButton from "../PrimaryButton";
+import uuid from "react-uuid";
 
 const MenuCard = ({menuItems}) => {
 
@@ -7,7 +9,7 @@ const MenuCard = ({menuItems}) => {
             {/* For each menu item we have, render out a MenuItem */}
             <div className="menuItemBox">
                 <div className="menuItemBox__nameOfMenuItem">{menuItems.item}</div>
-
+                <div>{menuItems.options.map(option => <PrimaryButton key={uuid()} label={option} itemName={menuItems.item}></PrimaryButton>)}</div>
             </div>
         </div>
     );
