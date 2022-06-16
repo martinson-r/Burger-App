@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import MenuCard from "../MenuCard";
+import Modal from "../Modal";
 import { getMenu } from "../../store/menu";
 import uuid from "react-uuid";
 import "./home.css";
@@ -14,6 +15,8 @@ function Home() {
         dispatch(getMenu);
       }, [dispatch]);
 
+    const [isVisible, setIsVisible] = useState(false);
+
     return (
         <>
             <div className="container">
@@ -24,13 +27,17 @@ function Home() {
                             <div>(123) 456-6789</div>
                         </div>
                     </header>
+                    <div className="menu">
+                    <div className="cart" onClick={() => setIsVisible(true)}>View Cart</div>
+                    {/* For each category we have, render out a MenuCard */}
+                    {menu !== undefined && menu.menu?.map((item) =>
+
+                        <MenuCard key={uuid()} menuItems={item}/>
+                    )}
+
                 </div>
-                <div className="menu">
-                {/* For each category we have, render out a MenuCard */}
-                {menu !== undefined && menu.menu?.map((item) =>
-                    <MenuCard key={uuid()} menuItems={item}/>
-                )}
             </div>
+            {isVisible && <Modal setIsVisible={setIsVisible} />}
         </>
 
     );
