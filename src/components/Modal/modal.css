@@ -1,0 +1,11 @@
+.cartModal {
+    position: absolute;
+    background-color: #FCE87E;
+    border-radius: 6px;
+    border: 1px solid gray;
+    float: left;
+    right: 10%;
+    top: 44%;
+    width: 30%;
+    padding: 30px;
+}

@@ -1,0 +1,8 @@
+.cartMenuItem {
+    display: inline;
+}
+
+.removeItem {
+    font-weight: bold;
+    margin-left: 20px;
+}
