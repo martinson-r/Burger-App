@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import MenuCard from "../MenuCard";
 import { getMenu } from "../../store/menu";
+import uuid from "react-uuid";
 import "./home.css";
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
                 <div className="menu">
                 {/* For each category we have, render out a MenuCard */}
                 {menu !== undefined && menu.menu?.map((item) =>
-                    <MenuCard menuItems={item}/>
+                    <MenuCard key={uuid()} menuItems={item}/>
                 )}
             </div>
         </>

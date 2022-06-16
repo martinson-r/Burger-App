@@ -1,9 +1,12 @@
 import './primaryButton.css';
 
-function PrimaryButton() {
+function PrimaryButton({ label, itemName }) {
 
     return (
-        <></>
+        <>
+        <button className="primaryButton">{label.size} - {label.price}</button>
+        </>
+
     );
 
 }

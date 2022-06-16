@@ -1,0 +1,9 @@
+.primaryButton {
+    background-color: red;
+    border: 0;
+    display: block;
+    border-radius: 6px;
+    height: 50px;
+    width: 100px;
+    margin: 20px;
+}
