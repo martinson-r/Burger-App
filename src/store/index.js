@@ -1,12 +1,14 @@
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import menu from './menu';
+import cart from './cart';
 
 import monitorReducersEnhancer from './enhancers/monitorReducer'
 import loggerMiddleware from './middleware/logger'
 
 const rootReducer = combineReducers({
       menu,
+      cart
     });
 
 export default function configureStore(preloadedState) {
