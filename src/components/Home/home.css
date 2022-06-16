@@ -17,3 +17,25 @@
 .contactInfo, .menu {
     margin-top: 30px;
 }
+
+
+.cart {
+    background-image: url('../../../public/shopping_bag.png');
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    margin: 6px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: right;
+    background-color: #FCE87E;
+    background-blend-mode: multiply;
+
+    /* Hack to hide text added for accessibility */
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.cart-text {
+    padding-bottom: 40px;
+}
