@@ -31,7 +31,7 @@ function Home() {
                     <div className="menu">
                         {console.log('cart.....', cart)}
 
-                    <div className="cart-text" onClick={() => setIsVisible(true)}><b>View Cart</b></div>
+                    <div className="cart-text" onClick={() => setIsVisible(true)}><b>View Cart: ({cart.cart.length})</b></div>
                     <div className="cart-counter" onClick={() => setIsVisible(true)}>{cart.cart.length}</div>
 
                     <div className="cart" onClick={() => setIsVisible(true)}>View Cart</div>
